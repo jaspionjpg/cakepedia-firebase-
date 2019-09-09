@@ -37,9 +37,6 @@ class FirebaseService {
     }
 
     createFirestorageUser(uid, email, password, nick, sexo) {
-
-        
-
         admin
             .firestore()
             .collection("usuario")
@@ -54,8 +51,6 @@ class FirebaseService {
                 conversas: []
             });
     }
-
-    
 }    
 
 module.exports = new FirebaseService
